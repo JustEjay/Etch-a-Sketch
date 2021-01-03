@@ -41,13 +41,13 @@ function reset (){
     while(gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
-    size = prompt('New Size up to 64');
+    size = prompt('Select a grid Size 1-64');
 
 // check to make sure is number 
     if(size !== null) {
         size = parseInt(size);
         if(size < 1 || size >64 || Number.isNaN(size)){
-             alert("Enter a number from 1-64 range");
+             alert("Select a grid Size 1-64");
              reset();
         } else {
             startGrid(size); 
