@@ -35,13 +35,13 @@ function changeColor(e){
 }
 
 function reset (){
-    
+
     // remove all chiled nodes from gridContainer
 
     while(gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
-    size = prompt('New Size');
+    size = prompt('New Size up to 64');
 
 // check to make sure is number 
     if(size !== null) {
